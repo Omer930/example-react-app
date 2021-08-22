@@ -20,6 +20,6 @@ RUN rm -rf ./*
 
 COPY --from=builder /app/build .
 
-EXPOSE 8080
+EXPOSE 8090
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
